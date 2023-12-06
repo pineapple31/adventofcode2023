@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
-use std::char;
 
-fn main() {
+fn part1() {
+    println!("---- Part 1 ----");
     let file_path = "./input.txt";
     let binding = read_to_string(file_path)
         .unwrap();
@@ -22,7 +22,16 @@ fn main() {
         sum += num;
     }
 
-    println!("{:?}", sum);
+    println!("Part 1 : {:?}", sum);
+    println!("----------------");
+}
 
-    println!("File {file_path} :");
+fn part2() {
+    println!("---- Part 2 ----");
+    println!("----------------");
+}
+
+fn main() {
+    part1();
+    part2();
 }
